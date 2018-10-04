@@ -80,12 +80,29 @@ Each block of exercises should have the following structure if possible:
 
 ## Projects
 
-// Todo
+**Prefer projects over any other type of knowledge assessment because it is closer to real life**. Projects do make it harder to assess the knowledge. How to make it easier to assess the student during projects will be expanded upon in the future (contributions welcome).
 
-// Individual, pairs, groups of three and above
+### Individual
 
-// Usually a good idea to use agile methods with larger projects
+* Comment **a lot**
 
+### Pair
+
+* Comment **a lot**
+* Pair programming?
+
+### Larger groups
+
+Prefer working in larger groups, ** > 3**, depending on the length of the project. This is prefered because:
+
+* Collaboration with Git, the students have to work with git conflicts and multiple branches.
+* Not as heavy burden on the individual, get help from team members, diversity in problem solving.
+* Students can take on different roles in the project.
+
+Teams can work agile, the amount of application of agile framework or method can vary. The minimum should be:
+
+* **Daily standups**
+* **Some kind of board to handle backlog**: [GitHub Project Boards](https://help.github.com/articles/about-project-boards/) or [Trello](https://trello.com/)
 
 ## Exams
 
