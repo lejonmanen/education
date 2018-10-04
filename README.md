@@ -1,6 +1,8 @@
 # Education for technical subjects
 
-This repository is a standard for creating a Quality Insured And Great EducationTM. It includes everything from how to structure your lessons to actual practical tools to simplify and effectively create content for your students. This is **not a best practice or a silver bullet**, it's just based on first hand experience and may well be very wrong on some parts and I do not always follow these guidelines myself because I am mortal.
+This repository is a collection of _"things that work"_, pedagogy 101 and some things that are obvious but just easy to forget when your in the middle of it. It includes everything from how to structure your lessons to actual practical tools to simplify and effectively create content for your students. This is **not a best practice or a silver bullet**, it's just based on first hand experience and may well be very wrong on some parts and I do not always follow these guidelines myself because I am mortal.
+
+**Feedback and contributes are always welcome**
 
 ## Continuity
 
@@ -23,6 +25,28 @@ Everything can be reused and further built upon. Resuse everything you can and t
 * Day 11: _"Today we will save our favorite movies in the browser by using buttons and events"_
 * Day far ahead in the future: _"Today we will fetch movies from an API and save our favorites both in the browser and our own database and connect it to our logged in user"_
 
+
+## Explanations
+
+* **Always have two explanations**: one correct but technical and one semi-correct that is primary non-technical.
+
+![We get it!](images/poets.png)
+
+* **Analogy**
+    * _"An analogy is a cognitive process of transferring information or meaning from a particular subject (the analog, or source) to another (the target), or a linguistic expression corresponding to such a process."_ - Wikipedia
+    * _"I know what an analogy is. It's like a thought with another thought's hat on."_ - Britta Perry, Community S03E11
+
+## Student submissions
+
+**Always** supply a strict format, name and structure for submitting an assignment. For example you can use the following:
+
+
+* **File format**: everything must be supplied as a `.zip`. `.zip` isn't the most compact format but it will work on any modern computer without installing an extra utility. If you are working with external modules in the project (npm for example) be sure the student removes these from the project before submitting to decrease file size.
+* **Naming of files**: **both** foldername and filename must follow the same naming standard. For example: `firstname_lastname_assignmentname.zip`. Otherwise you will have 5 `my assignment 2`-folders and you have no idea who actually sent in the assignment. This step is mainly for you to avoid cognitive load and headache both for you and your students, but mainly for you.
+* **Credentials**: if the submission has some sort of login or database-credentials this must be supplied somehow, preferably the student has a README in the submission with these credentails. If the assignment uses a database like SQL, an exported `.sql`-file should be supplied as well.
+* **README**: Every submission should have a README with at least the students name in it.
+
+
 ## Structure
 
 ### Day to day
@@ -36,31 +60,71 @@ Everything can be reused and further built upon. Resuse everything you can and t
 5. **Solutions/feedback**: **Ask if some students want to show their solutions. It doesn't have to be finished solutions. You can use a students code and solve it live with the help of the class. As long as some key concepts and gotchas are brought up. Create an environment were showing your code is encouraged**. If no volunteers, walk through some solutions yourself to some of the exercises that you found that the students had the hardest time to grasp. Use a debugger to step through the code here.
 6. Move on to next deeper area of subject or a different subject. Repeat step 2-5 until end of day. At end of day, summarize the content of the day.
 
-## Explanations
+### Course
 
-* **Always have two explanations**: one correct but technical and one semi-correct that is primary non-technical.
+// TODO
 
-![We get it!](images/poets.png)
+## Exercises
 
-* **Analogy**
-    * _"An analogy is a cognitive process of transferring information or meaning from a particular subject (the analog, or source) to another (the target), or a linguistic expression corresponding to such a process."_ - Wikipedia
-    * _"I know what an analogy is. It's like a thought with another thought's hat on."_ - Britta Perry, Community S03E11
+Each block of exercises should have the following structure if possible:
+
+* **1-2** exercise that everyone can manage to solve. This exercise should be close to the example/examples done during _demo time_: _"Print 10 numbers with a loop"_
+* **1-2** exercise that builds upon the knowledge obtained by the previous exercise but a bit harder: _"Sum all the previous 10 numbers and then print the summed value."_
+* **1-∞** exercises that can either build upon the previous exercises or be something completely new as long as it exercises the current objective: _"Go through a list of words and only print those words that are longer than 5 chars"_. It can be a good idea to supply hints: _"There is a built in function to count the length of a string, search for it."_
+
+## Projects
+
+// Todo
+
+## Exams
+
+// Exams
 
 ## Tools
 
+### Course outline and material
+
+Every course should have a [GitHub](https://github.com/)-repository. It doesn't need to be GitHub, you can also use GitLab, BitBucket or similar. Everything that is not sensitive information should be in this repository. This approach is prefered because:
+
+
+* Get students familiarized with hosting services for version control. Learn how to navigate a project.
+* Accessable anywhere, no login required (if you are using public repos, you can get free private repos for education purpose if you want to hide some material) and students can easily link and share details.
+* Easier for **you** to update the course material. If you use markdown-based material, updating this material is fast and fairly easy as it is just a commit of updated text. If you use markdown-based presentations as well (linked in a later section below) it's easy to update mistakes in the presentations aswell, instead of reuploading a new `.pdf` or `.pptx`. Just make sure to ask the students to reload the page after your updates (people seldom reload pages)
+* Repository can easily be cloned or copied
+
+#### Structure of course on GitHub
+
+The course can have the following outline. You can further divide the readme if it gets too long.
+
+* :page_with_curl: `README.md`
+    - _Overview of course, small intro_
+    - _Course litterature_
+    - _Course links_
+    - _Schedule_
+* :open_file_folder: `exercises`
+    - Folder with all exercises
+    - May be a good idea to label them with numbers according to when they appear: `01_intro.md`, `02_variables.md` etc.
+* :open_file_folder: `slides`
+    - Your `.pdf`, `.pptx` or `.md`-slides here
+* :open_file_folder: `democode`
+    - Everything that is done during demo code-time should be put in this folder
+* :open_file_folder: `examinations`
+    - Every mandatory assignment in here
+* :page_with_curl: `issue_template.md`
+    - If you use issues you may want a template for submitting an issue, your students can open issues if they have a problem or found an error in the course material
+
+
 ### Presentation
+
+Prefer text-based presentation tools that can easily be converted between different formats.
 
 * [Deckset](https://www.deckset.com/)
     - Only for _Mac_. Turns `.md`-files into presentations. Easier to change, write and commit. Can be exported as `.pdf` for example.
 * [Reveal.js](https://revealjs.com/#/)
     - HTML-based presentation tool. Can be made to handle `.md`-files as well.
 * [MDX-Deck](https://jxnblk.com/mdx-deck/#0)
-    - React-based presentation tool that uses `.md`-files for content.
+    - React-based presentation tool that uses `.mdx`-files for content (an extension of `.md`)
 * [Slides.com](https://slides.com/)
     - HTML-based presentation tool, online tool based on reveal.js
 * [hackmd](https://hackmd.io/)
     - Collaborative markdown-notes with built in presentation mode
-
-### Course material
-
-
