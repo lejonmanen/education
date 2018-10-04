@@ -89,11 +89,27 @@ Each block of exercises should have the following structure if possible:
 
 ## Exams
 
-// Exams
+**An exam must do two things**:
+    1. _Test the students current knowledge, primarly fact based questions._
+    2. _Let the student apply their current knowledge to learn new things about the subject._
 
-// Written pen-and-paper exams vs home exams
+**Example**: During the course or during a presentation you could provide the student with only the pros of a tool/language/framework, presenting why it's a good thing for the student to learn it. On the exam on the other hand, you could ask the question: _"What are the cons of using tool/language/framework?"_. 
 
+If the student can answer the question the student will have deducted the answer and learn't something new. If the student failed to answer the question the student should now know what to research/study for the future. 
 
+### Written exams
+
+* This is not my area of expertise :grimacing:
+
+### Home exams
+
+* This is not my area of expertise :grimacing:
+
+### Quizes
+
+* This will be expanded upon. 
+* If you are doing quizes on a page that has a WYSIWYG-editor you can use a tool such as [**http://hilite.me/**](http://hilite.me/) to provide the student with code with syntax highlighting. This will make it easier to read the source code and makes it easier to focus on actually solving the question.
+ 
 ## Tools
 
 ### Course outline and material
