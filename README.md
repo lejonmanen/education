@@ -46,11 +46,17 @@ Everything can be reused and further built upon. Resuse everything you can and t
 * **Credentials**: if the submission has some sort of login or database-credentials this must be supplied somehow, preferably the student has a README in the submission with these credentails. If the assignment uses a database like SQL, an exported `.sql`-file should be supplied as well.
 * **README**: Every submission should have a README with at least the students name in it.
 
+Some alternative methods of submission are:
+
+* **Repository link**: students send you a link to a repository, or invite you to collaborate on it
+* **Online code snippet**: students send you a link to a code snippet using an online service. Examples include [CodePen](https://codepen.io/), [repl.it](https://repl.it/languages/) and [JS Bin](https://jsbin.com/?html,css,js,output)
+* **repl.it automated submissions**: create assignments complete with unit tests, to give students instant feedback on whether they pass. [Teacher area on repl.it](https://repl.it/teacher)
+
 
 ## Structure
 
 ### Day to day
-> A single day in higher education is usually **6 hours**. Depending on the subject the steps below can be repeated 2-4 times a day (excluding step 1). This means that you can have one or two big presentations followed by exercises and feedback or you could have many short presentations and shorter exercises. The exercises should be in focus.
+> A single day in higher education is usually **6 hours**. Depending on the subject the steps below can be repeated 2-4 times a day (excluding step 1). This means that you can have one or two big presentations followed by exercises and feedback or you could have many short presentations and shorter exercises. The exercises should be in focus. Remember to take frequent breaks: up to 45 minutes of _presentation_ and 15 minutes _break_ is a good rule of thumb.
 
 1. **Clarify the content of the day**: what we will learn and why is it important to learn based on **practical day to day usage**. Don't start of by explaining the theoretical parts of `Big O Notation`, start of by saying: _"Every loop or sort impacts performance making your application slower which makes your users impatient which results in loss of customers and money. Big O helps you understand that impact."_
     * _"We will learn the basics of how a function works, well defined functions helps you debug, scale functionality and find problems faster."_
@@ -76,9 +82,17 @@ Each block of exercises should have the following structure if possible:
 
 // Todo
 
+// Individual, pairs, groups of three and above
+
+// Usually a good idea to use agile methods with larger projects
+
+
 ## Exams
 
 // Exams
+
+// Written pen-and-paper exams vs home exams
+
 
 ## Tools
 
@@ -92,13 +106,19 @@ Every course should have a [GitHub](https://github.com/)-repository. It doesn't 
 * Easier for **you** to update the course material. If you use markdown-based material, updating this material is fast and fairly easy as it is just a commit of updated text. If you use markdown-based presentations as well (linked in a later section below) it's easy to update mistakes in the presentations aswell, instead of reuploading a new `.pdf` or `.pptx`. Just make sure to ask the students to reload the page after your updates (people seldom reload pages)
 * Repository can easily be cloned or copied
 
+Alternatives to a GitHub repository include
+
+* Google Doc with links to resources - easiest to update
+* Wiki - superior ability to do text search on files
+
+
 #### Structure of course on GitHub
 
 The course can have the following outline. You can further divide the readme if it gets too long.
 
 * :page_with_curl: `README.md`
     - _Overview of course, small intro_
-    - _Course litterature_
+    - _Course literature_
     - _Course links_
     - _Schedule_
 * :open_file_folder: `exercises`
@@ -128,3 +148,5 @@ Prefer text-based presentation tools that can easily be converted between differ
     - HTML-based presentation tool, online tool based on reveal.js
 * [hackmd](https://hackmd.io/)
     - Collaborative markdown-notes with built in presentation mode
+
+Google Slides allows for shared documents that are very similar to PowerPoint.
