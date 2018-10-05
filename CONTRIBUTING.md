@@ -21,6 +21,8 @@ This repository is mainly the thoughtworks of the individual that owns this repo
 3. Push branch to your own fork.
 4. Create pull request from your own fork into `master` of base repo.
 
+Pro tip: GitHub makes this super easy. Open the file on GitHub and click the pen icon. GitHub will automatically create a fork for you. The save button is now "Propose file change" and you get the option to create a pull request and destroy the fork afterwards.
+
 ## How can I contribute?
 
 ### Adding examples
