@@ -2,7 +2,7 @@
 
 This repository is a collection of _"things that work"_, pedagogy 101 and some things that are obvious but just easy to forget when your in the middle of it. It includes everything from how to structure your lessons to actual practical tools to simplify and effectively create content for your students. This is **not a best practice or a silver bullet**, it's just based on first hand experience and may well be very wrong on some parts and I do not always follow these guidelines myself because I am mortal.
 
-**Feedback and contributions are always welcome**
+**Feedback and contributions are always welcome. If you want to know more on how you can contribute, visit [CONTRIBUTING.md](CONTRIBUTING.md)**
 
 ## Continuity
 
