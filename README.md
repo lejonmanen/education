@@ -84,25 +84,64 @@ Each block of exercises should have the following structure if possible:
 
 ### Individual
 
-* Comment **a lot**
+* Keep in mind that the class is likely to have widely varying degrees of skill. Make sure there is a _G version_ that covers the most basic course requirements, and a _VG version_ that provides a reasonable challenge for the top of the class.
+* Good for assessing individual skill.
+* Takes a lot more time to correct and grade, not always feasible for large classes.
 
-### Pair
+### Pairs
 
-* Comment **a lot**
-* Pair programming?
+* Students will naturally seek out classmates with similar skill. They will carry each other tend to get stuck less.
+* Skill level between groups still likely to vary much.
+* Group is small enough that students will not be able to "evade work" as easily.
+* Pair programming can be used, which transfers skill and helps in lowering rate of bugs.
+* Students will tend to pair up with the same person. This can be good or bad.
 
 ### Larger groups
 
-Prefer working in larger groups, ** > 3**, depending on the length of the project. This is prefered because:
+Prefer working in larger groups, **size > 3**, depending on the length of the project. This is prefered because:
 
 * Collaboration with Git, the students have to work with git conflicts and multiple branches.
 * Not as heavy burden on the individual, get help from team members, diversity in problem solving.
 * Students can take on different roles in the project.
 
+However:
+
+* Weaker students tend to choose simpler tasks and work less; stronger students will work more. Groups thus have a natural tendency to be "unfair" unless this is controlled.
+* It's harder to ascertain that every group member has learned everything they need to pass the course. Consider having requirements like _"every group member should write at least one AJAX function"_.
+* Some students will try to evade work. To combat this, make both the group as a whole and each member write a **Log Book**. The project log should contain any relevant information about the agile meetings the group is doing. The individual log should contain a short description of work done each day or week. They should also list any fulfilled individual requirements.
+
+You need to choose whether to manually select students for each group or let them choose themselves. If the students decide, they will form groups based on who they already know and people of similar skill. This will lead to several strong groups, but risk getting a "disaster group" that is almost predetermied to fail.
+
+On the other hand, if **you decide the groups**, you can either pick people of similar skill level or try to form mixed groups. If groups are too internally similar in skill, we get a disaster group. Mixing the weaker students among several groups shares the risk. Students will generally accept this if some form of check is made (log books) to prevent group members getting away with avoiding work.
+
+Use **different groups on different projects** for several reasons. The students get to know others in their class better. They won't be able to choose their groups in work. They are thrown out of their comfort zone and get to practice group dynamics. They better learn how to work with others.
+
 Teams can work agile, the amount of application of agile framework or method can vary. The minimum should be:
 
 * **Daily standups**
 * **Some kind of board to handle backlog**: [GitHub Project Boards](https://help.github.com/articles/about-project-boards/) or [Trello](https://trello.com/)
+
+
+## Presentations
+
+Project groups should have a presentation for the class as part of the examination. When doing a project over several weeks, consider having weekly presentations - _sprint review_ - to let the students practice presenting their work.
+
+* Make sure the presentation shows as many of the requirements as possible, so you can "check the boxes" as they speak.
+* Invite the school administration (utbildningsledare) to presentations. Double benefit: they get to see how the class is doing and students get to practicing explaining their work for non-technical people.
+* Keep in mind that some students may be shy. As a general rule, we do not choose working with computers because we love public speaking. Some students may have real issues just standing in front of the class. Try to identify such students early and have an ongoing discussion with the school administration about how to handle their situation. These students are also more likely to have difficulities finding internship (LIA) on their own.
+* How long the presentation should be. Set a time or an interval.
+
+A presentation can contain these points:
+
+* (first presentation) Show any prototypes you have. Talk about your vision for the project.
+* Show the project board
+* Talk briefly about what you have done since last presentation. What were your greatest obstacle and how did you solve it? This hopefully teaches other students that groups regularly run into problems, the important thing is learning how to solve or sidestep them.
+* (all but last presentation) Talk briefly about what remains to be done. What do you expect to be the greatest challenges?
+* Demonstration of the new parts
+* (final presentation) Demonstrate the project from the perspective of a new user.
+* (final presentation) Briefly evaluate your process. Are you satisfied with how you worked? Would you have planned it differently with what you know now?
+* Allocate some time for questions from the audience and the teacher.
+* Applause!
 
 ## Exams
 
@@ -116,13 +155,31 @@ If the student can answer the question the student will have deducted the answer
 
 ### Written exams
 
-* This is not my area of expertise :grimacing:
+You get to see what students know when all help is taken away. This gives a clear picture of basic knowledge. Conditions are artificial compared to actual work, which involve stack overflow to a sometimes alarming degree. The score of an exam is super useful in getting to know the skill of each student. Students with lower scores should be higher on your priority throughout the education.
+
+* Good for testing theoretical and basic knowledge.
+* Grade levels can feel arbitrary, but actually give a pretty good picture of the students knowledge. This is useful when making groups for projects.
+* Bad for testing practical coding skill.
+* Bad for testing knowledge about larger projects.
+* Better for first term courses than later courses, because projects will be larger.
+* Sample questions:
+* * What is the result of the following JavaScript operation? `'1' + 0` (answer: '10')
+* * Write a function that calculates the sum of an arbitrary list of integers
+* * What does the following code print to the console? (several rows, tests student ability to read code and understand the compiler/interpreter)
+
+// A separate document might be useful, with different kinds of useful exam questions, and types of questions to avoid
 
 ### Home exams
 
-* This is not my area of expertise :grimacing:
+A home exam is basically an obligatory assignment that each student makes. Students will be able to google and discuss the exam among themselves.
 
-### Quizes
+* Use open ended questions where students need to argue, rather than find the correct solution: _What are the main advantages and disadvantages of framework X?_ rather than _Is this function synchronous or asynchronous?_
+* Students are forced to actually research the questions, so you can ask questions about stuff you have not gone through in detail.
+* Try to formulate questions so the answer is not immediately obvious if you type the question in google.
+* Better for thinking about the whole picture, rather than specific problems and solutions.
+* Good for later courses, when the answer is not directly obvious or you want students to use previous knowledge to make a point.
+
+### Quizzes
 
 * This will be expanded upon. 
 * If you are doing quizes on a page that has a WYSIWYG-editor you can use a tool such as [**http://hilite.me/**](http://hilite.me/) to provide the student with code with syntax highlighting. This will make it easier to read the source code and makes it easier to focus on actually solving the question.
